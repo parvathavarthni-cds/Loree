@@ -24,17 +24,13 @@ import cucumber.api.CucumberOptions;
 
 			@BeforeClass()
 			public void setup() throws Exception {
-				ExtentProperties extentProperties = ExtentProperties.INSTANCE;
-				extentProperties.setReportPath("output/myreport.html");
-				extentProperties.setProjectName("The Hive Automation");
+				
 			}
 			@AfterClass()
 			public void teardown() throws UnirestException {
-				Reporter.loadXMLConfig(new File("src/test/resources/extent-config.xml"));
-				Reporter.setSystemInfo("user", System.getProperty("user.name"));
-				Reporter.setSystemInfo("os", System.getProperty("os.name"));
-				Reporter.setSystemInfo("Browser", "Google Chrome");
-				Reporter.setTestRunnerOutput("Sample test runner output message");
+				
 
 			}
 	}
+	
+
