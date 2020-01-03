@@ -16,7 +16,7 @@ import cucumber.api.CucumberOptions;
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
 	features ="Features",
-	glue = {"library.Loree_functionalities.java"}
+	glue = {"Screens"}
 	
 	)
 	public class Cucucmbermain extends AbstractTestNGCucumberTests {
