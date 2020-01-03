@@ -63,7 +63,7 @@ dependencies {
 	testCompile 'org.seleniumhq.selenium:selenium-api:3.14.0'
 	//testCompile 'org.seleniumhq.selenium:selenium-remote-driver:3.12.0'
 	//testCompile 'org.seleniumhq.selenium.client-drivers:selenium-java-client-driver:1.0.2'
-	testCompile 'org.seleniumhq.selenium:selenium-chrome-driver:3.14.0'
+	testCompile 'org.seleniumhq.selenium:selenium-chrome-driver:2.45.0'
 	//scheduler
 	testCompile 'org.quartz-scheduler:quartz:2.2.3'
 	testCompile 'org.quartz-scheduler:quartz-jobs:2.2.3'
@@ -106,3 +106,4 @@ dependencies {
 	testCompile 'com.squareup.okhttp3:okhttp:3.10.0'
 	testCompile 'com.squareup.okio:okio:1.14.1'
 }
+
