@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="cucumbermain.Cucucmbermain$Cucumber_Main">
+      <class name="cucumbermain.Cucucmbermain">
         <methods>
           <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="feature" invocation-numbers="0"/>
           <include name="teardown"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- cucumbermain.Cucucmbermain$Cucumber_Main -->
+      </class> <!-- cucumbermain.Cucucmbermain -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
