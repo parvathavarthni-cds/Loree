@@ -19,7 +19,7 @@ public static WebDriver driver;
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get(url);
-		driver.manage().window().setSize(new Dimension(1920, 1080));
+		//driver.manage().window().setSize(new Dimension(1920, 1080));
 		driver.manage().window().maximize();
 		return driver;
 	}
