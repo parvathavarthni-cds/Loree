@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -17,8 +16,8 @@ public static WebDriver driver;
 
 	public WebDriver LoginPage_verification(WebDriver driver,String url) throws InterruptedException
 	{
-		WebDriverManager.firefoxdriver().setup();
-		driver = new FirefoxDriver();
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 		driver.get(url);
 		//driver.manage().window().setSize(new Dimension(1920, 1080));
 		driver.manage().window().maximize();
@@ -43,5 +42,4 @@ public static WebDriver driver;
 		return driver;
 	}
 }
-
 
