@@ -13,7 +13,7 @@ import com.vimalselvam.cucumber.listener.Reporter;
 import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import cucumber.api.CucumberOptions;
-	@RunWith(Cucumber.class)
+	//@RunWith(Cucumber.class)
 	@CucumberOptions(
 	features ="Features",
 	glue = {"Screens"}
