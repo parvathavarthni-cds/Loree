@@ -24,6 +24,8 @@ import cucumber.api.CucumberOptions;
 
 			@BeforeClass()
 			public void setup() throws Exception {
+			BasicConfigurator.configure();
+
 				
 			}
 			@AfterClass()
