@@ -16,12 +16,13 @@ public static WebDriver driver;
 
 	public WebDriver LoginPage_verification(WebDriver driver,String url) throws InterruptedException
 	{
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.get(url);
+		WebDriverManager.firefoxdriver().setup();
+		FirefoxOptions firefoxOptions = new FirefoxOptions();
+		firefoxOptions.addArguments("--headless");
+				driver = new FirefoxDriver(firefoxOptions);
+				driver.get(url);
 		//driver.manage().window().setSize(new Dimension(1920, 1080));
 		driver.manage().window().maximize();
-		return driver;
 	}
 
 	public WebDriver Login(WebDriver driver,String emailid,String Password) throws InterruptedException 
